@@ -1,0 +1,106 @@
+body{
+  background-color: hsl(216, 12%, 8%);
+  display: flex;
+  justify-content: center;
+  margin-top: 40%;
+}
+#rating-state{
+  display: block;
+}
+#rating-state, #thank-you-state{
+  background-image: linear-gradient(rgba(31,38,48,255), rgba(23,30,40,255));
+  width: 275px;
+  height: 320px;
+  border-radius: 5%;
+  padding: 15px 25px;
+}
+h2, h3, p{
+  color: hsl(0, 0%, 100%);
+  font-family: 'Overpass', sans-serif;
+}
+#rating{
+  color: white;
+  list-style-type: none;
+  display: grid;
+  margin-left: -40px;
+  grid-template-columns: repeat(5, 57px);
+}
+#rating li, button{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  color: hsl(216, 12%, 54%);
+  background-color: rgba(39,46,56,255);
+  font-family: 'Overpass', sans-serif;
+  border: none;
+}
+#rating button:hover{
+  color: white;
+  background-color: hsl(25, 97%, 53%);
+}
+.image{
+  width: 50px;
+  height: 50px;
+  background-color: rgba(39,46,56,255);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#star{
+  width: 20px;
+  height: 20px;
+}
+#submit{
+  color: white;
+  font-family: 'Overpass', sans-serif;
+  background-color: hsl(25, 97%, 53%);
+  font-weight: 600;
+  width: 275px;
+  height: 45px;
+  border-radius: 40px;
+  border: none;
+}
+#submit:hover{
+  background-color: white;
+  color: hsl(25, 97%, 53%);
+}
+#thank-you-state{
+  display: none;
+}
+.image2{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+#result{
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: hsl(25, 97%, 53%);
+  background-color: rgba(39,46,56,255);
+  font-family: 'Overpass', sans-serif;
+  width: 150px;
+  height: 25px; 
+  border-radius: 20px;
+}
+.wrapper{
+  display: flex;
+  justify-content: center;
+}
+.paragraph{
+  margin-top: -20px;
+}
+@media only screen and (min-width: 400px) {
+  body{
+    display: flex;
+    justify-content: center;
+    margin-top: 15%;
+  }
+}
